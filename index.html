@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Order</a></li>
+                <li><a href="#">Food</a></li>
+                <li><a href="#">Restaurant</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li>
+                    <div class="menu-icon">
+                        <img src="menu-bar.png" alt="Menu Icon">
+                    </div>
+                </li>
+            </ul>
+            
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="content">
+            <h1>LOREM IPSUM</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id est vitae dolor rhoncus tristique. Maecenas metus quam, rhoncus euismod lorem in, sollicitudin viverra eros. Donec dictum luctus quam ut tristique. Curabitur nec faucibus purus. Quisque congue sem nec justo mollis, in tincidunt erat pretium. Sed pulvinar, massa ac porta viverra.</p>
+            <a href="gallery.html"><button>Click Me</button></a>
+        </div>
+        <div class="image">
+            <img src="pexels-robin-stickel-70497.jpg" alt="Burger and Fries">
+        </div>
+    </section>
+
+    <script>
+        document.querySelector('.menu-icon').addEventListener('click', () => {
+            document.querySelector('nav ul').classList.toggle('showing');
+        });
+    </script>
+</body>
+</html>

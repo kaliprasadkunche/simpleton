@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to right, #fffcc2 30%, #ea4e87 70%);
+}
+
+header {
+    background: #ff6b6b;
+    padding: 10px;
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex: 1;
+}
+
+nav a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.menu-icon {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.hero {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0;
+    background: linear-gradient(to right, #fffcc2, #f16f9f);
+    height: 91.4vh;
+}
+
+.hero .content {
+    flex: 1;
+    padding: 20px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero h1 {
+    font-size: 60px;
+    letter-spacing: 4px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-size: 20px;
+    color: #2d2d2d;
+    padding: 10px;
+}
+
+.hero button {
+    padding: 10px 20px;
+    background: #ff6b6b;
+    border: none;
+    color: #f0e5e5;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    width: 200px;
+}
+
+.hero .image {
+    flex: 1;
+    display: flex;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery {
+    display: flex;
+    padding: 120px;
+    background: linear-gradient(to right, #fffcc2, #f09dd9);
+}
+
+.left-images {
+    flex: 1 1 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-image {
+    flex: 1 1 40%;
+    display: flex;
+    align-items: center;
+}
+
+.gallery-item {
+    flex: 1;
+    padding: 10px;
+}
+
+.gallery-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.gallery .content {
+    flex: 1 1 60%;
+    padding: 30px;
+    margin: 30px;
+    margin-top: 100px;
+    background: #ff6b6b;
+    text-align: left;
+    height: 260px;
+}
+
+.gallery h2 {
+    font-size: 55px;
+    font-weight: bold;
+    color: #000;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    letter-spacing: 5px;
+    line-height: 1;
+}
+
+.gallery a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.gallery a img {
+    width: 22px;
+    height: 22px;
+    margin-left: 8px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero p {
+        font-size: 18px;
+        margin-bottom: 50px;
+    }
+
+    .hero button {
+        width: 150px;
+    }
+
+    .gallery {
+        padding: 80px;
+    }
+
+    .gallery .content {
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .gallery h2 {
+        font-size: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .hero .content, .hero .image {
+        flex: 1 1 100%;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero button {
+        width: 100%;
+    }
+
+    .gallery {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .left-images, .right-image {
+        flex: 1 1 100%;
+    }
+
+    .gallery .content {
+        height: auto;
+        margin-top: 20px;
+    }
+
+    .gallery h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        font-size: 20px;
+    }
+
+    .menu-icon img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .hero button {
+        width: 100%;
+        padding: 8px 16px;
+    }
+
+    .gallery {
+        padding: 20px;
+    }
+
+    .gallery .content {
+        height: auto;
+        margin-top: 10px;
+    }
+
+    .gallery h2 {
+        font-size: 25px;
+    }
+}
